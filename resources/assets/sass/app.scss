@@ -1,0 +1,69 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background: $body-bg;
+  font-family: 'Roboto', serif;
+}
+.Wrapper {
+  display: flex;
+}
+.Content {
+  width: 90%;
+  padding-top: 60px;
+}
+.index-card {
+  width: 90%;
+}
+.h_centered {
+  padding: 30px;
+}
+.h_topMarger {
+  margin-top: 30px;
+}
+.rightHead {
+  height: 60px;
+  background: darken($body-bg, 5%);
+  width: 100%;
+  position: fixed;
+}
+.buttonCircleContainer {
+  position: relative;
+}
+.buttonCircle {
+  width: 40px;
+  height: 40px;
+  margin: 15px 0;
+  font-size: 25px;
+  border: 2px solid #0767b2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  color: #0767b2;
+  align-items: center;
+  &:hover ~ .buttonCircleText {
+    opacity: 1;
+    
+  }
+}
+.buttonCircleText {
+  color: lighten(#0767b2, 10%);
+  opacity: 0;
+  position: absolute;
+  top: 25px;
+  font-weight: bold;
+  left: -130px;
+  transition: .15s ease-in;
+}

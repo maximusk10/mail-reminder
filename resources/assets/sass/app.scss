@@ -99,6 +99,15 @@ body {
   width: 50%;
 }
 
+.reminder-filters__button {
+  padding: 0 0 20px 0;
+  text-align: center;
+}
+.btn-filter {
+  min-width: 250px;
+  font-size: 15px;
+}
+
 // Checked
 .checkedContainer {
   display: block;

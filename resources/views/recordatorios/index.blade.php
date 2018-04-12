@@ -37,6 +37,9 @@
                     </select>
                 </div>
             </div>
+                <div class="reminder-filters__button">
+                    <button class="btn btn-info btn-filter">Filter</button>
+                </div>
             <table class="table table-hover">
                 <thead class="thead-dark">
                     <tr>

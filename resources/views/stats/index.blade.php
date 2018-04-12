@@ -28,6 +28,9 @@
                 </select>
               </div>
             </div>
+            <div class="reminder-filters__button">
+                    <button class="btn btn-info btn-filter">Filter</button>
+                </div>
             <div class="log-table">
               <table class="table table-bordered">
 

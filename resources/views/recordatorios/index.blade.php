@@ -19,6 +19,23 @@
                         </div>
                     </a>
                 </div>
+                
+            </div>
+            <div class="reminder-filters">
+                <div class="reminder-filters__element">
+                    <label for="cboTipo">Type</label>
+                    <select name="cboTipo" id="cboTipo" class="form-control">
+                        <option value="">SMS</option>
+                        <option value="">EMAIL</option>
+                    </select>
+                </div>
+                <div class="reminder-filters__element">
+                    <label for="cboStatus">Status</label>
+                    <select name="cboStatus" id="cboStatus" class="form-control">
+                        <option value="">Enabled</option>
+                        <option value="">Disabled</option>
+                    </select>
+                </div>
             </div>
             <table class="table table-hover">
                 <thead class="thead-dark">

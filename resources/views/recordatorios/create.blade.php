@@ -15,7 +15,10 @@
                 </div>
                 <div class="form-group">
                     <label for="chkStatus">Status</label>
-                    <input type="checkbox" class="form-control" id="chkStatus" />
+                    <div class="checkedContainer">
+                        <input type="checkbox" name="chkEnabled" id="chkEnabled" />
+                        <label for="chkEnabled"></label>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="txtName">Name</label>

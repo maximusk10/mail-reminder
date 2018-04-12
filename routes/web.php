@@ -29,3 +29,11 @@ Route::get('/config', function () {
 Route::get('/mail-list', function () {
     return view('lista-correos/index');
 });
+
+Route::get('/logs', function () {
+    return view('logs/index');
+});
+
+Route::get('/stats', function () {
+    return view('stats/index');
+});

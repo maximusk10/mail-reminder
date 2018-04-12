@@ -47660,6 +47660,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Sidebar",
@@ -47741,6 +47761,40 @@ var staticRenderFns = [
                 _c("div", { staticClass: "Sidebar__Description" }, [
                   _vm._v(
                     "\n                        Sent Emails\n                    "
+                  )
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "Sidebar__Element" }, [
+            _c(
+              "a",
+              { staticClass: "Sidebar__Link", attrs: { href: "/logs" } },
+              [
+                _c("div", { staticClass: "Sidebar__Icon" }, [
+                  _c("i", { staticClass: "fa fa-info-circle" })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "Sidebar__Description" }, [
+                  _vm._v("\n                        Logs\n                    ")
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "Sidebar__Element" }, [
+            _c(
+              "a",
+              { staticClass: "Sidebar__Link", attrs: { href: "/stats" } },
+              [
+                _c("div", { staticClass: "Sidebar__Icon" }, [
+                  _c("i", { staticClass: "fa fa-line-chart" })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "Sidebar__Description" }, [
+                  _vm._v(
+                    "\n                        Stats\n                    "
                   )
                 ])
               ]

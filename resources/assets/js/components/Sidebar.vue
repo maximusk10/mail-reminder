@@ -35,6 +35,26 @@
                       </div>
                   </a>
               </li>
+              <li class="Sidebar__Element">
+                  <a href="/logs" class="Sidebar__Link">
+                      <div class="Sidebar__Icon">
+                          <i class="fa fa-info-circle"></i>
+                      </div>
+                      <div class="Sidebar__Description">
+                          Logs
+                      </div>
+                  </a>
+              </li>
+              <li class="Sidebar__Element">
+                  <a href="/stats" class="Sidebar__Link">
+                      <div class="Sidebar__Icon">
+                          <i class="fa fa-line-chart"></i>
+                      </div>
+                      <div class="Sidebar__Description">
+                          Stats
+                      </div>
+                  </a>
+              </li>
           </ul>
       </nav>
   </div>

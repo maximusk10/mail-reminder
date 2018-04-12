@@ -4,6 +4,7 @@
 
 // Variables
 @import "variables";
+@import "sidebar";
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
@@ -66,4 +67,24 @@ body {
   font-weight: bold;
   left: -130px;
   transition: .15s ease-in;
+}
+
+.log-filters {
+  width: 100%;
+  padding: 10px 0 30px 0;
+}
+.log-filters__date {
+  margin: 10px 5px;
+  width: 50%;
+}
+.log-filters__date-container {
+  display: flex;
+  justify-content: space-between;
+}
+.log-filters__select {
+
+}
+
+.reminder-filters {
+  @extend .log-filters;
 }

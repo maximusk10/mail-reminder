@@ -10219,11 +10219,39 @@ body {
 
 .checkedContainer input:checked ~ label {
   color: white;
+  background: rgba(82, 197, 226, 0.274);
   background: #0767b2;
 }
 
 .checkedContainer input:checked ~ label::after {
   color: white;
   content: "\F00C";
+}
+
+.table-hover-td td {
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+}
+
+.table-hover-td tr {
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+}
+
+tr:nth-child(1) {
+  font-weight: bold;
+}
+
+.table-hover-td tr:nth-child(2) {
+  background: rgba(104, 190, 122, 0.4);
+  position: relative;
+}
+
+.table-hover-td tr:nth-child(3) {
+  background: rgba(226, 205, 111, 0.4);
+}
+
+.table-hover-td tr:nth-child(4) {
+  background: rgba(173, 88, 82, 0.4);
 }
 

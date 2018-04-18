@@ -32,10 +32,8 @@
                     <button class="btn btn-info btn-filter">Filter</button>
                 </div>
             <div class="log-table">
-              <table class="table table-bordered">
-
-                  <tbody>
-                      <tr>
+              <table class="table table-bordered table-hover-td">
+                  <tbody class="wot">
                         <tr>
                           <td>Day</td>
                           <td>01/04/2018</td>
@@ -60,7 +58,51 @@
                           <td></td>
                           <td></td>                          
                         </tr>
-                      </tr>
+                        <tr>
+                          <td>02/04/2018</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>                          
+                        </tr>
+                  </tbody>
+              </table>
+
+              <table class="table table-bordered table-hover-td">
+                  <tbody class="wot">
+                        <tr>
+                          <td>Day</td>
+                          <td>01/04/2018</td>
+                          <td>02/04/2018</td>
+                          <td>03/04/2018</td>
+                          <td>04/04/2018</td>
+                          <td>05/04/2018</td>
+                        </tr>
+                        <tr>
+                          <td>01/04/2018</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>02/04/2018</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>                          
+                        </tr>
+                        <tr>
+                          <td>02/04/2018</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>                          
+                        </tr>
                   </tbody>
               </table>
             </div>

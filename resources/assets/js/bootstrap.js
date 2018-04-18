@@ -54,3 +54,89 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+$(document).ready(function(){
+    // COLUMN SELECT
+    $('.table-hover-td').each(function(index, value){
+        let elemTr = $(value).find('tr')
+        elemTr.each(function(index, value){
+            $(value).attr('rownum', index);
+        });
+    })
+    $('.table-hover-td tr').each(function(index, value){
+        $(this).find('td').each(function(index, value){
+            $(value).attr('colnum', index);
+            console.log(index);
+        })
+        
+    })
+
+    // COLORES 
+    // amarillo rgb(226, 205, 111)
+    // rojo rgb(173, 88, 82)
+    // verde rgb(104, 190, 122)
+    $('.table-hover-td td').mouseover(function(e){
+        let currRow = $(this).attr('colnum');
+        console.log(currRow);
+        if ($(this).parent().attr('rownum') == 1) {
+            $(this).parent().css('background', 'rgba(104, 190, 122, 1)')
+            $(this).parent().parent().parent().find('td[colnum="'+currRow+'"]').css('background', 'rgba(0,0,0, 0.25)')
+           console.log($(this).parent().parent().parent());
+        }
+        else if ($(this).parent().attr('rownum') == 2) {
+            $(this).parent().css('background', 'rgba(226, 205, 111, 1)')
+            $(this).parent().parent().find('td[colnum="'+currRow+'"]').css('background', 'rgba(0,0,0, 0.25)')
+        }
+        else if ($(this).parent().attr('rownum') == 3) {
+            $(this).parent().css('background', 'rgba(173, 88, 82, 1)')
+            $(this).parent().parent().find('td[colnum="'+currRow+'"]').css('background', 'rgba(0,0,0, 0.25)')
+        }
+        else {
+            $(this).parent().css('background', 'rgba(0,0,0,.1)')
+            
+            $(this).find('td[colnum="' + currRow + '"]').css('background', 'rgba(0,0,0, 0.1)')
+        }
+    })
+
+    $('.table-hover-td td').mouseout(function (e) {
+        let currRow = $(this).attr('colnum');
+        console.log(currRow);
+        if ($(this).parent().attr('rownum') == 1) {
+            $(this).parent().css('background', 'rgba(104, 190, 122, .4)')
+            $(this).parent().parent().parent().find('td[colnum="' + currRow + '"]').css('background', 'rgba(0,0,0, 0)')
+            console.log($(this).parent().parent().parent());
+        }
+        else if ($(this).parent().attr('rownum') == 2) {
+            $(this).parent().css('background', 'rgba(226, 205, 111, .4)')
+            $(this).parent().parent().find('td[colnum="' + currRow + '"]').css('background', 'rgba(0,0,0, 0)')
+        }
+        else if ($(this).parent().attr('rownum') == 3) {
+            $(this).parent().css('background', 'rgba(173, 88, 82, .4)')
+            $(this).parent().parent().find('td[colnum="' + currRow + '"]').css('background', 'rgba(0,0,0, 0)')
+        }
+        else {
+            $(this).parent().css('background', 'rgba(0,0,0, 0)')
+            $(this).find('td[colnum="' + currRow + '"]').css('background', 'rgba(0,0,0, 0)')
+        }
+    })
+    $('.table-hover-td td').mouseout(function (e) {
+        let currRow = $(this).attr('colnum');
+        if ($(this).parent().attr('rownum') == 1) {
+            $(this).parent().css('background', 'rgba(104, 190, 122, .4)')
+            $(this).find('td[colnum="'+currRow+'"]').css('background', 'rgba(0,0,0, 0)')
+        }
+        else if ($(this).parent().attr('rownum') == 2) {
+            $(this).parent().css('background', 'rgba(226, 205, 111, .4)')
+            $(this).find('td[colnum="'+currRow+'"]').css('background', 'rgba(0,0,0, 0)')
+        }
+        else if ($(this).parent().attr('rownum') == 3) {
+            $(this).parent().css('background', 'rgba(173, 88, 82, .4)')
+            $(this).find('td[colnum="'+currRow+'"]').css('background', 'rgba(0,0,0, 0)')
+        }
+        else {
+            $(this).parent().css('background', 'rgba(0,0,0, 0)')
+            $(this).find('td[colnum="'+currRow+'"]').css('background', 'rgba(0,0,0, 0)')
+        }
+    })
+
+});
